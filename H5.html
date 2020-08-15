@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            display: flex;
+            height: 60px;
+            align-items: center;
+            background-color: red;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 80%;
+            width: 15%;
+            background-color: yellow;
+            margin-right: 47px;
+            margin-left: 3px;
+        }
+
+        .search {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50%;
+            width: 40%;
+            background-color: blueviolet;
+            margin-right: 50px;
+        }
+
+        .createpost {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50%;
+            width: 20%;
+            background-color: lightblue;
+            margin-right: 20px;
+        }
+
+        .bell {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50%;
+            width: 5%;
+            background-color: greenyellow;
+            margin-right: 10px;
+
+        }
+
+        .login {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50%;
+            width: 15%;
+            background-color: rgb(219, 130, 193);
+            margin-right: 20px;
+        }
+
+        .comments {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50%;
+            width: 15%;
+            background-color: honeydew;
+            margin-right: 3px;
+        }
+
+        .left-sidebar {
+            width: 300px;
+            height: 400px;
+            background-color: black;
+        }
+
+        .left-sidebar>div {
+            display: flex;
+            align-items: center;
+            height: 10%;
+            width: 100px;
+            background-color: white;
+            margin: 3px;
+        }
+
+        .right-sidebar {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+        }
+
+        .right-sidebar>div {
+            display: flex;
+            align-items: center;
+            height: 10%;
+            width: 100px;
+            background-color: white;
+            margin: 3px;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            height: 400px;
+            background-color: blue;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        @media (max-width: 1400px) {
+            .right-sidebar {
+                display: none;
+            }
+
+            .comments {
+                display: none;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .left-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .search {
+                display: none;
+            }
+
+            .createpost {
+                display: none;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .bell {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            logo
+        </div>
+        <div class="search">
+            search
+        </div>
+        <div class="createpost">
+            <button>Create</button>
+        </div>
+        <div class="bell">
+            bell
+        </div>
+        <div class="login">
+            login
+        </div>
+        <div class="comments">
+            comments
+        </div>
+
+    </div>
+    <div class="wrapper">
+        <div class="left-sidebar">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore vitae, beatae provident sit
+            corporis magnam sed eius quod exercitationem harum suscipit dolores similique laboriosam laudantium odio
+            totam consequuntur dolore.
+        </div>
+
+        <div class="right-sidebar">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+</body>
+
+</html>
